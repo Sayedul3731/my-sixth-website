@@ -81,6 +81,51 @@ nav li a{
     align-items: center;
     margin: 100px 330px;
 }
+/* popular styles here  */
+.popular-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.popular-title{
+    font-size: 28px;
+    font-weight: 600px;
+    color: #3a3a3a;
+    margin-bottom: 50px;
+}
+.popular{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.card{
+    width: 300px;
+    height: 430px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    margin-left: 100px;
+    
+}
+.card-title{
+    margin-top: 16px;
+    font-size: 28px;
+    font-weight: 500px;
+    color: #18191F;
+}
+.price{
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.card-description{
+    font-size: 14px;
+    font-weight: 700px;
+    line-height: 26px;
+}
 
 
 /* responsive styles here  */
@@ -123,6 +168,16 @@ nav li a{
         flex-direction: column;
         gap: 30px;
     }
+    .popular-container{
+        margin-top: 50px;
+    }
+    .popular{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 20px;
+    }
+    .card{
+        margin-left: 0px;
+    }
    
 }
 @media screen and (min-width: 576px) and (max-width:960px) {
@@ -143,9 +198,15 @@ nav li a{
         text-align: center;
     }
     .logo-container{
-        margin: 10px;
+        margin: 30px;
         padding: 10px;
         flex-wrap: wrap;
         gap: 20px;
+    }
+    .popular{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .card{
+        margin-left: 0px;
     }
 }
