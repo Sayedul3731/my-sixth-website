@@ -38,10 +38,14 @@ nav li a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 180px 30px 180px;
+    margin: 50px 180px;
 }
 .influencer-content{
-    width: 600px;
+    width: 40%;
+}
+.influencer-img{
+    width: 500px;
+    height: 500px;
 }
 .influencer-title{
     font-size: 50px;
@@ -50,58 +54,98 @@ nav li a{
 }
 .influencer-description{
     font-weight: 600px;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    line-height: 26px;
 }
 .btn{
-    padding: 10px 25px;
-    border-radius: 20px;
-    background: #E02C6D;
+    padding: 15px 25px;
+    border-radius: 30px;
+    background-color: #E02C6D;
     color: white;
+    font-size: 20px;
     border: 0px;
 }
 .influencer-img{
-    width: 440px;
     background: url('../images/Circle\ design.svg');
-    display: flex;
-  
+    background-repeat: no-repeat;
+    background-size: auto;
 }
-.influencer-img img{
-    position: relative;
-    margin-top: 30px;
+.camera{
+    margin-top: 10px;
+}
+/* logo styles here  */
+.logo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 330px;
 }
 
+
 /* responsive styles here  */
-@media screen and (max-width: 576px) {
-    header, nav > ul{
+@media screen and (max-width:576px) {
+    header{
+        width: 100%;
         flex-direction: column;
+        padding: 10px;
     }
     nav ul{
-        margin-top: 30px;
+        margin-top: 50px;
+        flex-direction: column;
     }
     .influencer-container{
         width: 100%;
         flex-direction: column-reverse;
-        margin: 30px 10px;
+        margin: 20px 10px;
     }
     .influencer-content{
         width: 90%;
+        height: auto;
         text-align: center;
+        margin-top: 0px;
+    }
+    .influencer-title{
+        font-size: 30px;
     }
     .influencer-img{
-        width: 80%;
+       width: 90%;
+       background-size: 370px;
+       margin-bottom: 0px;
     }
-}
-@media screen and (min-width: 576px) and (max-width: 960px) {
-    header{
+    .camera{
+        width: 380px;
+        height: auto;
+    }
+    .logo-container{
+        margin: 0px;
+        padding: 10px;
         flex-direction: column;
-        gap: 50px;
+        gap: 30px;
+    }
+   
+}
+@media screen and (min-width: 576px) and (max-width:960px) {
+    header{
+        width: 90%;
+        padding: 10px;
+        flex-direction: column;
+        gap: 30px;
     }
     .influencer-container{
+        width: 90%;
+        margin: 30px 10px;
         flex-direction: column-reverse;
-        gap: 50px;
     }
     .influencer-content{
+        width: 90%;
+        height: auto;
         text-align: center;
+    }
+    .logo-container{
+        margin: 10px;
+        padding: 10px;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 }
