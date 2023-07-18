@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+/* header styles here  */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 180px;
+}
+.header-title{
+    color: #3a3a3a;
+    font-size: 24px;
+    font-family: 700px;
+}
+nav > ul{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 35px;
+}
+nav li{
+    list-style: none;
+}
+nav li a{
+    color: #3a3a3a;
+    font-weight: 600px;
+    text-decoration: none;
+}
+/* influencer styles here  */
+.influencer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 180px 30px 180px;
+}
+.influencer-content{
+    width: 600px;
+}
+.influencer-title{
+    font-size: 50px;
+    font-weight: 700px;
+    color: #3a3a3a;
+}
+.influencer-description{
+    font-weight: 600px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.btn{
+    padding: 10px 25px;
+    border-radius: 20px;
+    background: #E02C6D;
+    color: white;
+    border: 0px;
+}
+.influencer-img{
+    width: 440px;
+    background: url('../images/Circle\ design.svg');
+    display: flex;
+  
+}
+.influencer-img img{
+    position: relative;
+    margin-top: 30px;
+}
+
+/* responsive styles here  */
+@media screen and (max-width: 576px) {
+    header, nav > ul{
+        flex-direction: column;
+    }
+    nav ul{
+        margin-top: 30px;
+    }
+    .influencer-container{
+        width: 100%;
+        flex-direction: column-reverse;
+        margin: 30px 10px;
+    }
+    .influencer-content{
+        width: 90%;
+        text-align: center;
+    }
+    .influencer-img{
+        width: 80%;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .influencer-container{
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .influencer-content{
+        text-align: center;
+    }
+}
